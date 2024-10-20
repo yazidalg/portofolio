@@ -2,23 +2,51 @@
 import React, {useTransition, useState} from 'react'
 import Image from 'next/image'
 import TabButton from './TabButton';
-import { title } from 'process';
+import Link from 'next/link';
 
 const TAB_DATA = [
   {
     title: 'Skills',
     id: 'skills',
     content: (
-      <ul>
-        <li>Go 7/10</li>
-        <li>Google Cloud Platform 7.5/10</li>
-        <li>AWS 7.5/10</li>
-        <li>Kubernetes 8/10</li>
-        <li>ArgoCD 7/10</li>
-        <li>Flutter 8/10</li>
-        <li>iOS 8/10</li>
-        <li>Grafana & Prometheus 7/10</li>
-        <li>CI/CD Pipeline 8/10</li>
+      <ul className='list-disc pl-2'>
+        <li>
+          <span className='font-bold'>Go</span> with rate 
+          <span className='text-green-500 font-bold'> 7/10</span>
+        </li>
+        <li>
+          <span className='font-bold'>Google Cloud Platform</span> with rate
+          <span className='text-green-500 font-bold'> 7.5/10</span>
+        </li>
+        <li>
+          <span className='font-bold'>AWS</span> with rate
+          <span className='text-green-500 font-bold'> 7.5/10</span>
+        </li>
+        <li>
+          <span className='font-bold'>Kubernetes</span> with rate
+          <span className='text-green-500 font-bold'> 8/10</span>
+        </li>
+        <li>
+          <span className='font-bold'>ArgoCD</span> with rate
+          <span className='text-green-500 font-bold'> 7/10</span>
+        </li>
+        <li>
+          <span className='font-bold'>Flutter</span> with rate
+          <span className='text-green-500 font-bold'> 7/10</span>
+        </li>
+        <li>
+          <span className='font-bold'>iOS Development</span> with rate
+          <span className='text-green-500 font-bold'> 8/10</span>
+        </li>
+        <li>
+          <span className='font-bold'>Grafana & Prometheus</span> with rate
+          <span className='text-green-500 font-bold'> 7/10</span>
+        </li>
+        <li>
+          <span className='font-bold'>Github Actions</span> with rate
+          <span className='text-green-500 font-bold'> 8/10</span>
+
+        </li>
       </ul>
     )
   },
@@ -26,7 +54,7 @@ const TAB_DATA = [
     title: 'Educations',
     id: 'educations',
     content: (
-      <ul>
+      <ul className='list-disc pl-2'>
         <li>Telkom University | 2022 - Present</li>
         <li>SMK IDN Boarding School | 2019 - 2022</li>
       </ul>
@@ -36,9 +64,13 @@ const TAB_DATA = [
     title: 'Certifications',
     id: 'certifications',
     content: (
-      <ul>
-        <li>Dicoding - Belajar Dasar Devops</li>
-        <li>Dicoding - Belajar Dasar Jaringan Komputer</li>
+      <ul className='list-disc pl-2'>
+        <li>
+          <Link href="https://www.dicoding.com/certificates/JMZV4QG9JXN9">Dicoding - Belajar Dasar Devops</Link>
+        </li>
+        <li>
+          <Link href="https://www.dicoding.com/certificates/0LZ042NL3P65">Dicoding - Belajar Dasar Jaringan Komputer</Link>
+        </li>
       </ul>
     )
   }
@@ -48,7 +80,7 @@ const AboutSection = () => {
   const [tab, setTab] = useState('skills');
   const [isPending, startTransition] = useTransition();
 
-  const handleTabChange = (id) => {
+  const handleTabChange = (id: string) => {
     startTransition(() => { 
       setTab(id);
      });
