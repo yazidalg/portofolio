@@ -518,7 +518,7 @@ export default function Portfolio() {
         <div className="max-w-6xl mx-auto text-center">
           <h3 className="text-3xl font-bold mb-8 text-slate-800">Get In Touch</h3>
           <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
-            I'm currently looking for new opportunities and would love to hear from you. Whether you have a question or
+            Im currently looking for new opportunities and would love to hear from you. Whether you have a question or
             just want to say hi, feel free to reach out!
           </p>
           <div className="flex flex-col justify-center items-center gap-4 mb-8">
