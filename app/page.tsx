@@ -13,14 +13,14 @@ export default function Portfolio() {
         <div className="max-w-6xl mx-auto px-4 py-4">
           <nav className="flex justify-between items-center">
             <h1 className="text-2xl font-bold text-slate-800">Yazid Al Ghozali</h1>
-            <div className="flex gap-4">
-              <Link href="/resume.pdf" target="_self" rel="noopener noreferrer">
+            {/* <div className="flex gap-4">
+              <Link href="/resume.html" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" size="sm">
                   <Download className="w-4 h-4 mr-2" />
                   Resume
                 </Button>
               </Link>
-            </div>
+            </div> */}
           </nav>
         </div>
       </header>
