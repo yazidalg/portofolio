@@ -437,6 +437,8 @@ export default function Portfolio() {
                   <Badge variant="secondary">Prometheus</Badge>
                   <Badge variant="secondary">Grafana</Badge>
                   <Badge variant="secondary">New Relic</Badge>
+                  <Badge variant="secondary">Sentry</Badge>
+                  <Badge variant="secondary">LogDNA</Badge>
                 </div>
               </CardContent>
             </Card>
