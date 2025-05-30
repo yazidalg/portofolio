@@ -13,14 +13,6 @@ export default function Portfolio() {
         <div className="max-w-6xl mx-auto px-4 py-4">
           <nav className="flex justify-between items-center">
             <h1 className="text-2xl font-bold text-slate-800">Yazid Al Ghozali</h1>
-            {/* <div className="flex gap-4">
-              <Link href="/resume.html" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="sm">
-                  <Download className="w-4 h-4 mr-2" />
-                  Resume
-                </Button>
-              </Link>
-            </div> */}
           </nav>
         </div>
       </header>
@@ -62,8 +54,300 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Projects Section */}
+      {/* Gallery Section */}
       <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
+            "Biggest impact is start from small things"
+          </p>
+          <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4">
+            {/* Gallery Item 1 */}
+            <div className="break-inside-avoid mb-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/grads.jpg"
+                className="w-full object-cover transition-all duration-300 group-hover:opacity-50"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-slate-900 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
+                  <h4 className="font-semibold mb-2">Graduation Day</h4>
+                  <p className="text-sm">SMK IDN Boarding School</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Gallery Item 2 */}
+            <div className="break-inside-avoid mb-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/klarsmile.jpeg"
+                className="w-full object-cover transition-all duration-300 group-hover:opacity-50"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-slate-900 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
+                  <h4 className="font-semibold mb-2">Klarsmile DevOps Team</h4>
+                  <p className="text-sm">Cost Estimate</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Gallery Item 3 */}
+            <div className="break-inside-avoid mb-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/git-101.jpeg"
+                className="w-full object-cover transition-all duration-300 group-hover:opacity-50"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-slate-900 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
+                  <h4 className="font-semibold mb-2">Git Workshop</h4>
+                  <p className="text-sm">Mentor of Git 101 Workshop in Motion Laboratory</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Gallery Item 4 */}
+            <div className="break-inside-avoid mb-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/motionhack2024.jpg"
+                alt="Web Application Interface"
+                className="w-full object-cover transition-all duration-300 group-hover:opacity-50"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-slate-900 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
+                  <h4 className="font-semibold mb-2">MotionHack 2024</h4>
+                  <p className="text-sm">Hackathon Event in Motion Laboratory</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Gallery Item 5 */}
+            <div className="break-inside-avoid mb-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/sg-motion-ios.jpg"
+                alt="Monitoring Dashboard"
+                className="w-full object-cover transition-all duration-300 group-hover:opacity-50"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-slate-900 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
+                  <h4 className="font-semibold mb-2">iOS Development</h4>
+                  <p className="text-sm">Study Group iOS Development in Motion Laboratory</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Gallery Item 6 */}
+            <div className="break-inside-avoid mb-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/setup-server.jpg"
+                alt="Infrastructure Diagram"
+                className="w-full object-cover transition-all duration-300 group-hover:opacity-50"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-slate-900 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
+                  <h4 className="font-semibold mb-2">Server Setup</h4>
+                  <p className="text-sm">Cloudflare Zero Trust on On-Premise Server</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Gallery Item 7 */}
+            <div className="break-inside-avoid mb-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/meet-klarsmile.jpg"
+                alt="Mobile App Screenshots"
+                className="w-full object-cover transition-all duration-300 group-hover:opacity-50"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-slate-900 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
+                  <h4 className="font-semibold mb-2">Klarsmile DevOps & Developer Team</h4>
+                  <p className="text-sm">Test Application after Migration</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Gallery Item 8 */}
+            <div className="break-inside-avoid mb-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/yazid-webteam.jpg"
+                alt="Docker Containers"
+                className="w-full object-cover transition-all duration-300 group-hover:opacity-50"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-slate-900 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
+                  <h4 className="font-semibold mb-2">Web Team</h4>
+                  <p className="text-sm">Web Team in Motion Laboratory</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Gallery Item 9 */}
+            <div className="break-inside-avoid mb-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/yazid.jpg"
+                alt="API Documentation"
+                className="w-full object-cover transition-all duration-300 group-hover:opacity-50"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-slate-900 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
+                  <h4 className="font-semibold mb-2">Motion Laboratory QnA</h4>
+                  <p className="text-sm">Motion Take Over Event Mobile Programming</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Gallery Item 11 */}
+            <div className="break-inside-avoid mb-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/motionlab.jpeg"
+                alt="Security Scanning Results"
+                className="w-full object-cover transition-all duration-300 group-hover:opacity-50"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-slate-900 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
+                  <h4 className="font-semibold mb-2">Motion Laboratory</h4>
+                  <p className="text-sm">Mobile Innovation Lab</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Gallery Item 12 */}
+            <div className="break-inside-avoid mb-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/seventsky.jpeg"
+                alt="Security Scanning Results"
+                className="w-full object-cover transition-all duration-300 group-hover:opacity-50"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-slate-900 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
+                  <h4 className="font-semibold mb-2">SevenSky</h4>
+                  <p className="text-sm">Development Team</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Gallery Item 13 */}
+            <div className="break-inside-avoid mb-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/abdimas.JPG"
+                alt="Security Scanning Results"
+                className="w-full object-cover transition-all duration-300 group-hover:opacity-50"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-slate-900 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
+                  <h4 className="font-semibold mb-2">Community Service</h4>
+                  <p className="text-sm">Education Program from Telkom University</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Gallery Item 14 */}
+            <div className="break-inside-avoid mb-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/lidm.jpeg"
+                alt="Security Scanning Results"
+                className="w-full object-cover transition-all duration-300 group-hover:opacity-50"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-slate-900 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
+                  <h4 className="font-semibold mb-2">LIDM Research</h4>
+                  <p className="text-sm">Competition, Research, and Development</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Gallery Item 15 */}
+            <div className="break-inside-avoid mb-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/robotic.jpg"
+                alt="Security Scanning Results"
+                className="w-full object-cover transition-all duration-300 group-hover:opacity-50"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-slate-900 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
+                  <h4 className="font-semibold mb-2">Robotics Team</h4>
+                  <p className="text-sm">Robotics Arm Competition at Pancasila University</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Gallery Item 16 */}
+            <div className="break-inside-avoid mb-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/technowadays.jpeg"
+                alt="Security Scanning Results"
+                className="w-full object-cover transition-all duration-300 group-hover:opacity-50"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-slate-900 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
+                  <h4 className="font-semibold mb-2">Technowadays</h4>
+                  <p className="text-sm">Tech Event</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Gallery Item 17 */}
+            <div className="break-inside-avoid mb-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/rumahkisah.jpeg"
+                alt="Security Scanning Results"
+                className="w-full object-cover transition-all duration-300 group-hover:opacity-50"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-slate-900 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
+                  <h4 className="font-semibold mb-2">Rumah Kisah</h4>
+                  <p className="text-sm">Internship at Rumah Kisah as Flutter Developer</p>
+                </div>
+              </div>
+            </div>
+            {/* Gallery Item 19 */}
+            <div className="break-inside-avoid mb-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="https://camo.githubusercontent.com/037fc4f7d42d8021eedfa39078f2e4bd2824bf73441667d9f0425a93d23b90ca/68747470733a2f2f63646e2e7177696b6c6162732e636f6d2f445067744e79374a546e3657364a59354a36574a617346765574376132253242353843357834424f57536a3745253344"
+                alt="Security Scanning Results"
+                className="w-full object-cover transition-all duration-300 group-hover:opacity-50"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-slate-900 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
+                  <h4 className="font-semibold mb-2">Google Cloud Study Jam</h4>
+                  <p className="text-sm">Kubernetes Application on GCP</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Gallery Item 20 */}
+            <div className="break-inside-avoid mb-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="https://camo.githubusercontent.com/afa458b832592c6ec1e7357be9ff1c05be4100af904a1ef12e3384dc6f0a009f/68747470733a2f2f63646e2e7177696b6c6162732e636f6d2f487a737838504430787a6b514a42584d51337143713972515a79397253584c7375446a3358424b44456463253344"
+                alt="Security Scanning Results"
+                className="w-full object-cover transition-all duration-300 group-hover:opacity-50"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-slate-900 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
+                  <h4 className="font-semibold mb-2">Google Cloud Study Jam</h4>
+                  <p className="text-sm">Migrate from SQL to Cloud SQL on GCP</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Gallery Item 21 */}
+            <div className="break-inside-avoid mb-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="https://camo.githubusercontent.com/8019b27fa6a4edfe063dbbdc42fbc0f72ebf3201eb833b09a8775f34158a08e0/68747470733a2f2f63646e2e7177696b6c6162732e636f6d2f6f523842253246754e79502532463067454c33496f6e6c66253242767073726149435a7a475567636761636d432532464d6467253344"
+                alt="Security Scanning Results"
+                className="w-full object-cover transition-all duration-300 group-hover:opacity-50"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-slate-900 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
+                  <h4 className="font-semibold mb-2">Google Cloud Study Jam</h4>
+                  <p className="text-sm">DevOps workflows with GCP</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Projects Section */}
+      < section className="py-16 px-4 bg-white" >
         <div className="max-w-6xl mx-auto">
           <h3 className="text-3xl font-bold text-center mb-12 text-slate-800">Featured Projects</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -376,10 +660,10 @@ export default function Portfolio() {
             </Card>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Skills Section */}
-      <section className="py-16 px-4">
+      < section className="py-16 px-4" >
         <div className="max-w-6xl mx-auto">
           <h3 className="text-3xl font-bold text-center mb-12 text-slate-800">DevOps Skills & Technologies</h3>
           <div className="grid md:grid-cols-3 gap-8">
@@ -481,10 +765,10 @@ export default function Portfolio() {
             </Card>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Education Section */}
-      <section className="py-16 px-4 bg-white">
+      < section className="py-16 px-4 bg-white" >
         <div className="max-w-6xl mx-auto">
           <h3 className="text-3xl font-bold text-center mb-12 text-slate-800">Education</h3>
           <div className="max-w-3xl mx-auto">
@@ -513,10 +797,10 @@ export default function Portfolio() {
             </Card>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Contact Section */}
-      <section className="py-16 px-4">
+      < section className="py-16 px-4" >
         <div className="max-w-6xl mx-auto text-center">
           <h3 className="text-3xl font-bold mb-8 text-slate-800">Get In Touch</h3>
           <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
@@ -544,14 +828,14 @@ export default function Portfolio() {
             </Link>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Footer */}
-      <footer className="bg-slate-800 text-white py-8 px-4">
+      < footer className="bg-slate-800 text-white py-8 px-4" >
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-slate-400">© 2025 Yazid Al Ghozali. Built with Next.js and deployed using CI/CD pipeline.</p>
         </div>
-      </footer>
-    </div>
+      </footer >
+    </div >
   )
 }
